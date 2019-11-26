@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Header from './components/Header';
 import  ExampleChart from './components/Chart';
 
 import moment from 'moment';
@@ -10,7 +8,7 @@ import 'moment/locale/pt-br';
 
 const data = [
     [{ type: 'string', label: 'Mês'},
-    'Percentual de Lucro no mês'
+    'Rentabilidade no mês'
     ],
     [moment("1", "MM").format('MMMM'), 1],
     [moment("2", "MM").format('MMMM'), 5],
@@ -28,7 +26,6 @@ const data = [
 
 const App = () => (
   <div className="App">
-    <Header />
     <ExampleChart data={data}/>
   </div>
 );
